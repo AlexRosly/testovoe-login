@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+        integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+        crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__mod">
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigatiom__item"><a href="#" class="navigation__link">Клуб</a></li>
+                    <li class="navigatiom__item"><a href="#" class="navigation__link">База знаний</a></li>
+                    <li class="navigatiom__item"><a href="#" class="navigation__link">Инструменты</a></li>
+                </ul>
+            </nav>
+            <ul class="login">
+                <li class="login__item">
+                    <a href="#" class="login__link login__link-modif">
+                        <svg class="login__link--icon">
+                            <use href="./image/symbol-defs.svg#icon-humen"></use>
+                        </svg>
+                    Вход</a>
+                </li>
+                <li >
+                    <a href="#" class="login__link login__link--btn">Регистрация</a>
+                </li>
+            </ul>
+            <ul class="launguage__item">
+                <li>Ru</li>
+            </ul>
+        </div>
+    </header>
+<main>
+    <section class="section__form">
+        <div class="container">
+                    <h1 class="title">Регистрация личного кабинета</h1>
+                    <form class="form">
+                        <label class="form__label form__label--email from__label--email-icon">E-mail
+                            <input type="email" name="email" class="form__input"><span class="email__message">Не корректный E-mail</span>
+                        </label>
+                        <label class="form__label form__label--password from__label--password-icon password">Придумайте пароль
+                            <input type="text" name="password" class="form__input" id="password-input"><span class="password__message">Не корректный пароль</span>
+                        </label>
+                        <label class="form__label form__label--password from__label--check-password-icon check-password">Подтвердите пароль
+                            <input type="text" name="password" class="form__input" id="password-check"><span class="password-check__message">Пароль не совпадает</span>
+                        </label>
+                        <div class="checkbox-risk">
+                            <label class="checkbox-risk__label">
+                                <input type="checkbox" name="checkbox" class="checkbox-risk__input">
+                                <span class="checkbox-risk__box"></span>
+                                <span class="checkbox-risk__text">Я ознакомлен с</span>&nbsp;<a href="#" class="checkbox-risk__link">Условиями, положениями и рисками</a>
+                            </label>
+                        </div>
+                    
+                        <div class="checkbox-policy">
+                            <label class="checkbox-policy__label">
+                                <input type="checkbox" name="checkbox" class="checkbox-policy__input">
+                                <span class="checkbox-policy__box"></span>
+                                <span class="checkbox-policy__text">Я ознакомлен с</span>&nbsp;<a href="#" class="checkbox-policy__link">Политикой конфиденциальности</a>
+                            </label>
+                        </div>
+                            <button type="submit" class="form__btn" disabled>Регистрация</button>
+                    </form>
+        </div>
+    </section>
+</main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+    <script src="./index.js" type="module"></script>
+</body>
+</html>
