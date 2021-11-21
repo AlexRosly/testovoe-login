@@ -25,6 +25,10 @@ a {
   color: var(--primary-text-color);
 }
 
+img {
+  display: block;
+}
+
 .header {
   background-color: rgba(41, 31, 57, 0.7);
 }
